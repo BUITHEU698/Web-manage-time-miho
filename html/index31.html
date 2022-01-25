@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index31.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href='https://css.gg/music.css' rel='stylesheet'>
+    <title>xinchao</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>ĐĂNG KÝ</header>
+        <form class="form " action="index323.html">
+            <div class="input-field">
+                <div class="input-box">
+                    <span class="details">Họ tên</span>
+                    <input type="text" placeholder="Nhập họ tên" required>
+                </div>
+            </div>
+            <div class="input-field">
+                <div class="input-box">
+                    <span class="details">Tên đăng nhập</span>
+                    <input type="text" placeholder="Nhập tên đăng nhập" required>
+                </div>
+            </div>
+            <div class="input-field">
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="Nhập email" required>
+                </div>
+            </div>
+            <div class="input-field">
+                <div class="input-box">
+                    <span class="details">Số điện thoại</span>
+                    <input type="text" placeholder="Nhap số điện thoại" required>
+                </div>
+            </div>
+            <div class="input-field">
+                <div class="input-box">
+                    <span class="details">Mật Khẩu</span>
+                    <input class="pswrd" type="password" placeholder="Nhâp mật khẩu" required>
+
+
+                </div>
+            </div>
+            <div class="input-field">
+                <div class="input-box">
+                    <span class="details">Xác nhận</span>
+                    <input class="pswrd" type="password" placeholder="Nhập lại mật khẩu" required>
+
+                </div>
+            </div>
+            <div class="button">
+                <div class="inner">
+                </div>
+                <button>Đăng ký</button>
+            </div>
+        </form>
+        <div class="auth">
+            Hoặc</div>
+
+        <div class="signup">
+            Đã có tài khoản? <a href="index3.html">Đăng nhập</a>
+        </div>
+
+    </div>
+
+    <script>
+        var input = document.querySelector('.pswrd');
+        var show = document.querySelector('.show');
+        show.addEventListener('click', active);
+
+        function active() {
+            if (input.type === "password") {
+                input.type = "text";
+                show.style.color = "#1DA1F2";
+                show.textContent = "Ẩn";
+            } else {
+                input.type = "password";
+                show.textContent = "Hiện";
+                show.style.color = "#111";
+            }
+        }
+    </script>
+</body>
+
+</html>

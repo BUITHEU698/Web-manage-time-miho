@@ -1,0 +1,86 @@
+:root {
+    --hd: #f99a9c;
+    --hn: #fdbccf;
+    --hic: #ff8b77;
+    --hbt: #ffaaaf;
+    --tim: #D3C0F9;
+    --XANHLA: #B5DDD1;
+    --XANHLANHAT: #B5DDD1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: inherit;
+    font-family: "UTM Facebook K&T";
+    box-sizing: border-box;
+}
+
+.conten {
+    margin: auto;
+    height: 736px;
+    width: 414px;
+    background-image: url(../images/Hinh-nen-mau-hong-47.jpg);
+    border-style: groove;
+    background-size: cover;
+    border-color: var(--xam);
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.miho {
+    margin-top: 50px;
+    display: flex;
+}
+
+h1 {
+    text-align: justify;
+    margin-top: 50px;
+    margin-left: 55px;
+    font-size: 40px;
+    color: var(--den)
+}
+
+.tren {
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 115px;
+    font-size: 25px;
+    color: var(--den)
+}
+
+.duoi {
+    text-align: justify;
+    margin-bottom: 5px;
+    margin-left: 35px;
+    font-size: 25px;
+    color: var(--den)
+}
+
+button {
+    font-size: 30px;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: 100px;
+    padding: 10px 80px 8px 80px;
+    background-color: var(--hbt);
+    color: #ffffff;
+}
+
+.button :hover {
+    cursor: pointer;
+    color: #211E1E(255, 255, 255);
+}
+
+.icon {
+    background-color: var(--hbt);
+    font-size: 40px;
+    padding: 15px;
+    border-radius: 50%;
+    color: #ffffff;
+    margin-left: 10px;
+    margin-top: 180px;
+}

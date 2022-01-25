@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href='https://css.gg/music.css' rel='stylesheet'>
+    <title>podomoro</title>
+</head>
+
+<body>
+    <div class="conten">
+        <div class="header">
+            <ul class="header-list">
+                <li class="header-item">
+                    <a href="setting.html" class="header-icon-link">
+                        <i class="header-icon fas fa-sliders-h"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="noidung">
+            <div class="clock">
+                <div class="hour">
+                    <div class="hr" id="hr"></div>
+                </div>
+                <div class="min">
+                    <div class="mn" id="mn"></div>
+                </div>
+                <div class="sec">
+                    <div class="sc" id="sc"></div>
+                </div>
+
+                <div class="circle-1">
+                    <i class="fas fa-chevron-circle-right"></i>
+                </div>
+                <div class="circle-2">
+                    <i class="fas fa-chevron-circle-left"></i>
+                </div>
+
+            </div>
+            <script type="text/javascript">
+                const deg = 6;
+                const hr = document.querySelector('#hr');
+                const mn = document.querySelector('#mn');
+                const sc = document.querySelector('#sc');
+
+                setInterval(() => {
+                    let day = new Date();
+                    let hh = day.getHours() * 30;
+                    let mm = day.getMinutes() * deg;
+                    let ss = day.getSeconds() * deg;
+                    hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
+                    mn.style.transform = `rotateZ(${(mm)}deg)`;
+                    sc.style.transform = `rotateZ(${(ss)}deg)`;
+
+                })
+            </script>
+
+            <img class="img" src="../images/thống kê home.PNG" alt="hihi" height="250" width="370">
+            <div class="nenbong">
+
+            </div>
+            <div class="ngiemngat">
+                <div class="tieude">
+                    <a href="../html/home.html">
+                        <img src="../images/X.png" width="30" height="30">
+                    </a>
+                    <h1><b>Thêm sự kiện</b></h1>
+                </div>
+                <form class="hihi" action="../html/home.html">
+                    <div class="input-field-1">
+                        <img src="../images/home1.PNG" width="35" height="35">
+                        <input type="text" required>
+                        <label>Tên</label>
+                    </div>
+                    <div class="input-field">
+                        <img src="../images/home2.PNG" width="35" height="35">
+                        <input type="date" value="12-07-2021" required>
+                        <label>Ngày/tháng/năm</label>
+
+                    </div>
+                    <div class="input-field">
+                        <img src="../images/home3.PNG" width="35" height="35">
+                        <input type="time" required>
+                        <label>Bắt đầu</label>
+                    </div>
+                    <div class="input-field">
+                        <img src="../images/home3.PNG" width="35" height="35">
+                        <input type="time" required>
+                        <label>Kết thúc</label>
+                    </div>
+                    <div class="input-field">
+                        <img src="../images/home4.PNG" width="35" height="35">
+                        <select name="child" id="child">
+                            <option value="0">Không lặp lại</option>
+                            <option value="1">Hằng ngày</option>
+                            <option value="2">Hằng tuần</option>
+                            <option value="3">Hằng tháng</option>
+                         </select>
+                        <label>Lặp lại</label>
+                    </div>
+                    <div class="input-field-1">
+                        <img src="../images/home5.PNG" width="35" height="35">
+                        <input type="password" required>
+                        <label>Chú thích</label>
+                    </div>
+                    <a href="home2.html">
+                        <div class="input-field-1">
+                            <img src="../images/home6.PNG" width="35" height="35">
+                            <input type="text" required>
+                            <label>+  Thêm thông báo</label>
+                        </div>
+                    </a>
+                    <div class="button">
+                        <div class="inner">
+                        </div>
+                        <button>Tạo sự kiện mới</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+        <div class="footer ">
+            <ul class="footer-list ">
+                <li class="footer-item ">
+                    <a href="home.html " class="footer-icon-link ">
+                        <i class="footer-icon fas fa-home "></i>
+                    </a>
+                </li>
+                <li class="footer-item ">
+                    <a href="podomoro.html " class="footer-icon-link ">
+                        <img class="footer-icon " src="../images/icon.png " alt="hihi " height="35 " width="35 ">
+                    </a>
+                </li>
+                <li class="footer-item ">
+                    <a href=" " class="footer-icon-link ">
+                        <i class="footer-icon fas fa-chart-pie "></i>
+
+                    </a>
+                </li>
+                <li class="footer-item ">
+                    <a href="canhan.html " class="footer-icon-link ">
+                        <i class="footer-icon fas fa-user "></i>
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="nenbong2">
+
+    </div>
+    <div class="themthongbao">
+        <form class="hihi" action="../html/home.html">
+            <div class="input2-field">
+                <select name="child" id="child">
+                    <option value="0">Trước khi bắt đầu</option>
+                    <option value="1">Khi bắt đầu</option>
+                    <option value="2">Sau khi bắt đầu</option>
+                    <option value="3">Trước khi kết thúc</option>
+                    <option value="4">khi kết thúc</option>
+                    <option value="5">Sau khi kết thúc</option>
+                 </select>
+                <label>Lặp lại</label>
+            </div>
+            <div class="input3-field">
+                <input class="input31" type="checkbox">
+                <p>Rung</p>
+
+                <input type="number" name="quantity" min="1" max="5" value="1">
+                <select name="child" id="child">
+                    <option value="0">Ngắn</option>
+                    <option value="1">dài</option>
+                 </select>
+
+            </div>
+            <div class="input4-field">
+                <input class="input31" type="checkbox">
+                <p>Âm</p>
+                <select name="child" id="child">
+                    <option value="0">Quân đội</option>
+                    <option value="1">Còi xe cảnh sát</option>
+                    <option value="0">Iphone</option>
+                    <option value="1">Samsung</option><option value="0">Quân đội</option>
+                    <option value="1">Điện thoại bàn</option>
+                    <option value="1">Dễ thương</option><option value="0">Quân đội</option>
+                    <option value="1">Tiếng cười</option>
+                 </select>
+
+            </div>
+            <div class="input5-field">
+                <input class="input31" type="checkbox">
+                <p>Phát giọng nói</p>
+            </div>
+            <div class="input5-field">
+                <input class="input31" type="checkbox">
+                <p>Cửa sổ tự động</p>
+            </div>
+            <div class="input2-field">
+                <input class="" type="text">
+                <label>Thêm chú thích</label>
+            </div>
+            <div class="input6-field">
+                <a href="home2.html">Hủy</a>
+                <a href="home1.html">Xong</a>
+            </div>
+
+
+        </form>
+    </div>
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,284 @@
+:root {
+    --hd: #f99a9c;
+    --hn: #fdbccf;
+    --hic: #ff8b77;
+    --hbt: #ffaaaf;
+    --tim: #D3C0F9;
+    --XANHLA: #71fcd2;
+    --XANHLANHAT: #B5DDD1;
+    --hbr: #fee3ea;
+    --xam: #B3A6A6;
+}
+
+.test {
+    color: #211E1E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: "UTM Facebook K&T";
+    box-sizing: border-box;
+}
+
+.conten {
+    height: 736px;
+    width: 414px;
+    margin: auto;
+    border-radius: 20px;
+    border-style: groove;
+    border-color: var(--xam);
+    position: relative;
+    background-color: var(--hbr);
+}
+
+.header {
+    height: 55px;
+    width: 407px;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+}
+
+.header-list {
+    list-style: none;
+}
+
+.header-icon-link {
+    color: var(--hic)
+}
+
+.header-item,
+.header-icon-link :hover {
+    cursor: pointer;
+    color: var(--xam)
+}
+
+.header-icon {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.footer {
+    height: 45px;
+    width: 408px;
+    border-style: solid none none none;
+    border-width: 3px;
+    border-color: #ffffff;
+    box-shadow: -0px -3px 3px var(--xam);
+    position: absolute;
+    bottom: 0px;
+}
+
+.footer-list {
+    list-style: none;
+    display: flex;
+    margin: 0px auto;
+}
+
+.footer-icon-link {
+    color: var(--hic);
+}
+
+.footer-item,
+.footer-icon-link :hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-icon {
+    margin-top: 3px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 35px;
+}
+
+.caidat {
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.caidat-list {
+    list-style: none;
+    display: flex;
+}
+
+.caidat-link {
+    color: #000000;
+    text-align: center;
+}
+
+.caidat-item,
+.caidat-link :hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.caidat-item {
+    margin: 0 auto;
+}
+
+.caidat-icon {
+    height: 50px;
+    width: 55px;
+    margin-top: 5px;
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 30px;
+    background-color: var(--hic);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.caidat-text {
+    font-size: 15px;
+    font-family: "UTM Facebook K&T";
+    text-decoration: none
+}
+
+.noidung {
+    margin-top: 110px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10%;
+    margin-top: 150px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 2px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+    color: #000000;
+}
+
+.btn-input {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10%;
+    margin-top: 800px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+input {
+    transition: 0.5s ease-in-out;
+    margin: 10px 0;
+    font-size: 18px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.11);
+    border: none;
+}
+
+label {
+    font-size: 25px;
+}
+
+form {
+    height: 20%;
+    display: flex;
+    padding: 3px;
+    margin: 4px auto;
+}
+
+form button {
+    background: var(--hbt);
+    width: 100%;
+    margin: 5px 0;
+    color: #000000;
+}
+
+.start:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.break:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.start {
+    background: var(--XANHLA);
+    color: rgb(0, 0, 0);
+}
+
+.break {
+    background: var(--XANHLA);
+    color: #000000;
+}
+
+.reset:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.reset {
+    background: var(--XANHLA);
+    color: #000000;
+}
+
+.pause:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.pause {
+    background: var(--XANHLA);
+    color: #000000;
+}
+
+.resume {
+    background: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+button.save:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.clock {
+    padding: 6px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 35%;
+    font-size: 70px;
+}
+
+.progress-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progress-ring__circle {
+    transition: 0.5s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke: var(--XANHLA);
+}
+
+.danger {
+    stroke: rgb(250, 0, 0);
+    animation: pulse 0.9s ease-in-out infinite;
+}

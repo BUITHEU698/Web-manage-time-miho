@@ -1,0 +1,266 @@
+:root {
+    --xd: #2BB6D5;
+    --xam: #B3A6A6;
+    --den: #211E1E;
+    --tim: #9b59b6;
+    --hd: #f99a9c;
+    --hn: #fdbccf;
+    --hic: #ff8b77;
+    --hbt: #ffaaaf;
+}
+
+.test {
+    color: #211E1E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: "UTM Facebook K&T";
+    box-sizing: border-box;
+}
+
+.br {
+    height: 736px;
+    width: 414px;
+    border-radius: 20px;
+    border-style: groove;
+    position: relative;
+    background-color: rgba(254, 237, 234, 0.7);
+}
+
+.conten {
+    display: block;
+    margin-top: 50px;
+    margin-left: 30px;
+    height: 536px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+p {
+    color: #B3A6A6;
+    margin-top: 270px;
+    margin-left: 120px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.hang {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: justify;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    margin-left: 35px;
+    font-size: 40px;
+    color: var(--den)
+}
+
+.contrn {
+    display: block;
+}
+
+.custom-radio-btn {
+    --size: 45px;
+    min-width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* changes from the video   */
+    margin: 0 10px;
+    position: relative;
+    padding-left: var(--size);
+}
+
+.custom-radio-btn input {
+    display: none;
+}
+
+.custom-radio-btn.left {
+    padding-left: 0;
+    padding-right: var(--size);
+}
+
+.custom-radio-btn.left .label {
+    margin: 0 5px;
+}
+
+.custom-radio-btn[aria-label]::after {
+    content: attr(aria-label);
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.custom-radio-btn .checkmark {
+    --gap: 3px;
+    --border: 2px;
+    background-color: #2BB6D5;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: inline-block;
+    transition: opacity 0.3s ease;
+    /* changes from the video  */
+    border: var(--border) solid #444;
+    padding: var(--gap);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#ch1 {
+    background-color: #e3acae;
+}
+
+#ch2 {
+    background-color: #f1a899;
+}
+
+#ch3 {
+    background-color: #ffaaaf;
+}
+
+#ch4 {
+    background-color: #f3b6cb;
+}
+
+#ch5 {
+    background-color: #f7496e;
+}
+
+#ch6 {
+    background-color: #ff69b4;
+}
+
+#ch7 {
+    background-color: #ea5550;
+}
+
+#ch8 {
+    background-color: #fa8072;
+}
+
+#ch9 {
+    background-color: #fa8072;
+}
+
+#ch10 {
+    background-color: #ba55d3;
+}
+
+#ch11 {
+    background-color: #ba55d3;
+}
+
+#ch12 {
+    background-color: #5a4498;
+}
+
+#ch13 {
+    background-color: #0ac9ff;
+}
+
+#ch14 {
+    background-color: #2196f3;
+}
+
+#ch15 {
+    background-color: #1560bd;
+}
+
+#ch16 {
+    background-color: #3f51b5;
+}
+
+#ch17 {
+    background-color: #a0d1f7;
+}
+
+#ch18 {
+    background-color: #57c8d6;
+}
+
+#ch19 {
+    background-color: #52b2c4;
+}
+
+#ch20 {
+    background-color: #b6dfd1;
+}
+
+#ch21 {
+    background-color: #50c878;
+}
+
+#ch22 {
+    background-color: #58dead;
+}
+
+#ch23 {
+    background-color: #00ac97;
+}
+
+#ch24 {
+    background-color: #009688;
+}
+
+#ch25 {
+    background-color: #8bc34a;
+}
+
+#ch26 {
+    background-color: #cddc39;
+}
+
+#ch27 {
+    background-color: #f8d685;
+}
+
+#ch28 {
+    background-color: #fdd35c;
+}
+
+#ch29 {
+    background-color: #c1b087;
+}
+
+#ch30 {
+    background-color: #455a64;
+}
+
+.custom-radio-btn.left .checkmark {
+    left: auto;
+    right: 0;
+}
+
+.custom-radio-btn input:checked~.checkmark {
+    /* changes from the video  */
+    /*  content box origin will make sure the bg-image only stays inside content area in between padding  */
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-image: radial-gradient( circle at center, var(--check-color)
+    /* the size of the check mark is determined by subtracting from the size of the circle
+       the border(both sides) and the gap(both sides) than dividing it by 2 to get the radius of the circle        */
+    calc((var(--size) - (var(--border) * 2) - (var(--gap) * 2)) / 2), rgba(255, 255, 255, 0) 0);
+}

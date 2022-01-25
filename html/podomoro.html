@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/podomoro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href='https://css.gg/music.css' rel='stylesheet'>
+    <title>podomoro</title>
+</head>
+
+<body>
+    <div class="conten">
+        <div class="header">
+            <ul class="header-list">
+                <li class="header-item">
+                    <a href="setting.html" class="header-icon-link">
+                        <i class="header-icon fas fa-sliders-h"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="noidung">
+            <figure class="clock">
+                <div class="mins">00</div>
+                <div>:</div>
+                <div class="secs">00</div>
+                <audio src="http://soundbible.com/mp3/service-bell_daniel_simion.mp3"></audio>
+                <svg class="progress-ring" height="300" width="300">
+                  <circle
+                    class="progress-ring__circle"
+                    stroke-width="10"
+                    fill="transparent"
+                    r="120"
+                    cx="150"
+                    cy="150"
+                  />
+                </svg>
+            </figure>
+
+            <div class="btn-group">
+                <button class="start">Bắt đầu</button>
+                <button class="reset">Làm mới</button>
+                <button class="pause">Tạm ngưng</button>
+            </div>
+            <div class="caidat">
+                <ul class="caidat-list">
+                    <li class="caidat-item">
+                        <a href="podomorocdnn.html" class="caidat-link">
+                            <i class="caidat-icon fas fa-users-slash"></i>
+                            <p class="caidat-text">Ngiêm ngặt</p>
+                        </a>
+                    </li>
+                    <li class="caidat-item">
+                        <a href="pomodorocdpt.html" class="caidat-link">
+                            <i class="caidat-icon fas fa-expand-arrows-alt"></i>
+                            <p class="caidat-text">Phóng to</p>
+                        </a>
+                    </li>
+                    <li class="caidat-item">
+                        <a href="podomorocdhg.html" class="caidat-link">
+                            <i class="caidat-icon fas fa-hourglass-half"></i>
+                            <p class="caidat-text">Hẹn giờ</p>
+                        </a>
+                    </li>
+                    <li class="caidat-item">
+                        <a href="podomorocdat.html" class="caidat-link">
+                            <i class="caidat-icon fas fa-music"></i>
+                            <p class="caidat-text">Âm thanh</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <script src="../js/podomoro/setting.js"></script>
+            <script src="../js/podomoro/time.js"></script>
+            <script src="../js/podomoro/progress.js"></script>
+
+        </div>
+
+        <div class="footer">
+            <ul class="footer-list">
+                <li class="footer-item">
+                    <a href="home.html" class="footer-icon-link">
+                        <i class="footer-icon fas fa-home"></i>
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="podomoro.html" class="footer-icon-link">
+                        <img class="footer-icon " src="../images/icon.png" alt="hihi" height="35" width="35">
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="thongke.html" class="footer-icon-link">
+                        <i class="footer-icon fas fa-chart-pie"></i>
+
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="canhan.html" class="footer-icon-link">
+                        <i class="footer-icon fas fa-user"></i>
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

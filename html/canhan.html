@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/canhan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href='https://css.gg/music.css' rel='stylesheet'>
+    <title>podomoro</title>
+</head>
+
+<body>
+    <div class="conten">
+        <div class="header">
+            <ul class="header-list">
+                <li class="header-item">
+                    <a href="setting.html" class="header-icon-link">
+                        <i class="header-icon fas fa-sliders-h"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="noidung">
+            <header id="hDOption">
+
+                <div class="option"> Cá nhân</div>
+            </header>
+            <div class="PGAN">
+                <div class="trangcanhan">
+
+                    <a href="canhan1.html" class="linkChangeAvartar">
+                        <img src="../images/cat.png" alt="" width="70" height="70" class="avartar" />
+                    </a>
+                    <div class="canhan">
+                        <p class="tren">Trần Nguyễn Quyết Thắng</p>
+                        <p class="duoi">Xem trang cá nhân</p>
+                    </div>
+                </div>
+
+
+
+                <div class="PersonalLaw">Quyền riêng tư</div>
+                <div class="help">TRUNG TÂM TRỢ GIÚP</div>
+                <div class="feedback">PHẢN HỒI</div>
+                <div class="privacyPolicy">CHÍNH SÁCH QUYỀN RIÊNG TƯ</div>
+                <div class="rules">ĐIỀU KHOẢN</div>
+                <a href="Trang14.html" class="linkThanks">
+                    <div class="thanks">LỜI CẢM ƠN</div>
+                </a>
+
+                <a href="../index.html" class="linkLogOut">
+                    <button class="logOut">ĐĂNG XUẤT&nbsp;</button>
+                </a>
+            </div>
+
+
+            <script>
+                $(document).ready(function() {
+                    document.getElementById('hDOption').style.backgroundColor = sessionStorage.getItem("HeaderBg");
+
+                });
+                // Function to change heading background color
+                function changeHeaderAndFooterBg(color) {
+                    sessionStorage.setItem("HeaderAndFooterBg", color);
+                    document.getElementById('hDOption').style.backgroundColor = sessionStorage.getItem("HeaderAndFooterBg");
+                    document.getElementById('Fter').style.backgroundColor = sessionStorage.getItem("HeaderAndFooterBg");
+                }
+            </script>
+        </div>
+
+        <div class="footer">
+            <ul class="footer-list">
+                <li class="footer-item">
+                    <a href="home.html" class="footer-icon-link">
+                        <i class="footer-icon fas fa-home"></i>
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="podomoro.html" class="footer-icon-link">
+                        <img class="footer-icon " src="../images/icon.png" alt="hihi" height="35" width="35">
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="thongke.html" class="footer-icon-link">
+                        <i class="footer-icon fas fa-chart-pie"></i>
+
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="canhan.html" class="footer-icon-link">
+                        <i class="footer-icon fas fa-user"></i>
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>

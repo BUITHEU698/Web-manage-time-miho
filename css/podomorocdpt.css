@@ -1,0 +1,43 @@
+:root {
+    --xd: #2BB6D5;
+    --xam: #B3A6A6;
+    --den: #211E1E;
+    --tim: #9b59b6;
+    --hd: #f99a9c;
+    --hn: #fdbccf;
+    --hic: #ff8b77;
+    --hbt: #ffaaaf;
+}
+
+.test {
+    color: #211E1E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: "UTM Facebook K&T";
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    height: 736px;
+    width: 414px;
+    position: relative;
+}
+
+.anhdemophongto img {
+    margin: auto;
+    height: 736px;
+    width: 414px;
+    border-radius: 20px;
+    border-style: groove;
+    border-color: var(--xam);
+    position: relative;
+}

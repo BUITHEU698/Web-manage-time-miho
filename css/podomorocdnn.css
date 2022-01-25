@@ -1,0 +1,394 @@
+:root {
+    --xd: #2BB6D5;
+    --xam: #B3A6A6;
+    --den: #211E1E;
+    --tim: #9b59b6;
+    --hd: #f99a9c;
+    --hn: #fdbccf;
+    --hic: #ff8b77;
+    --hbt: #ffaaaf;
+}
+
+.test {
+    color: #211E1E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: inherit;
+    font-family: "UTM Facebook K&T";
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    height: 736px;
+    width: 414px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border-style: groove;
+    border-color: var(--xam);
+    position: relative;
+}
+
+.header {
+    height: 55px;
+    width: 407px;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+}
+
+.header-list {
+    list-style: none;
+}
+
+.header-icon-link {
+    color: #838d8f
+}
+
+.header-item,
+.header-icon-link :hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.header-icon {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.footer {
+    height: 45px;
+    width: 408px;
+    border-style: solid none none none;
+    border-width: 3px;
+    border-color: #fff;
+    box-shadow: -0px -3px 3px var(--xam);
+    position: absolute;
+    bottom: 0px;
+}
+
+.footer-list {
+    list-style: none;
+    display: flex;
+    margin: 0px auto;
+}
+
+.footer-icon-link {
+    color: var(--hic);
+}
+
+.footer-item,
+.footer-icon-link :hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-icon {
+    margin-top: 3px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 35px;
+}
+
+.caidat {
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.caidat-list {
+    list-style: none;
+    display: flex;
+}
+
+.caidat-link {
+    color: #000000;
+    text-align: center;
+}
+
+.caidat-item,
+.caidat-link :hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.caidat-item {
+    margin: 0 auto;
+}
+
+.caidat-icon {
+    height: 50px;
+    width: 55px;
+    margin-top: 5px;
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 30px;
+    background-color: #2BB6D5;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.caidat-text {
+    font-size: 15px;
+    font-family: "UTM Facebook K&T";
+    text-decoration: none
+}
+
+.noidung {
+    margin-top: 110px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10%;
+    margin-top: 150px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 2px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+}
+
+.btn-input {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10%;
+    margin-top: 0px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+input {
+    transition: 0.5s ease-in-out;
+    margin: 10px 0;
+    font-size: 18px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.11);
+    border: none;
+}
+
+label {
+    font-size: 25px;
+}
+
+form {
+    height: 20%;
+    display: flex;
+    padding: 3px;
+    margin: 4px auto;
+}
+
+form button {
+    background: #2BB6D5;
+    width: 100%;
+    margin: 5px 0;
+    color: white;
+}
+
+.start:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.break:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.start {
+    background: #2BB6D5;
+    ;
+    color: white;
+}
+
+.break {
+    background: #2BB6D5;
+    ;
+    color: #ffffff;
+}
+
+.reset:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.reset {
+    background: #2BB6D5;
+    ;
+    color: #ffffff;
+}
+
+.pause:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.pause {
+    background: #2BB6D5;
+    color: #ffffff;
+}
+
+.resume {
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+button.save:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.clock {
+    padding: 6px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 35%;
+    font-size: 70px;
+}
+
+.progress-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progress-ring__circle {
+    transition: 0.5s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke: #2BB6D5;
+}
+
+.danger {
+    stroke: rgb(250, 0, 0);
+    animation: pulse 0.9s ease-in-out infinite;
+}
+
+.nenbong {
+    position: relative;
+    margin: 0 auto;
+    top: -592px;
+    border-radius: 20px;
+    height: 736px;
+    width: 410px;
+    background-color: rgba(254, 237, 234, 0.7);
+}
+
+.ngiemngat {
+    position: relative;
+    margin: 0 auto;
+    top: -1200px;
+    border-radius: 20px;
+    height: 465px;
+    width: 350px;
+    background-color: #ffffff;
+}
+
+.tieude {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+
+.tatbat {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.tatbat-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tatbat-label {
+    margin-top: 20px;
+    color: var(--xam)
+}
+
+.tatbat-input {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.xacnhan {
+    position: absolute;
+    top: 400px;
+    left: 35px;
+}
+
+.logOuthuy {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-right: 30px;
+    border-style: groove;
+    background-color: var(--xam);
+}
+
+.logOutxn {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: groove;
+    background-color: #f99a9c;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    -webkit-appearance: none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    transition: .5s;
+}
+
+input:checked[type="checkbox"] {
+    background: var(--hn)
+}
+
+input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: .5s;
+}
+
+input:checked[type="checkbox"]:before {
+    left: 20px;
+}
+
+.logOuthuy:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.logOutxn:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}

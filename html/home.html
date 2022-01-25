@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href='https://css.gg/music.css' rel='stylesheet'>
+    <title>podomoro</title>
+</head>
+
+<body>
+    <div class="conten">
+        <div class="header">
+            <ul class="header-list">
+                <li class="header-item">
+                    <a href="setting.html" class="header-icon-link">
+                        <i class="header-icon fas fa-sliders-h"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a href="home1.html">
+            <i class="icondate far fa-calendar-alt"></i>
+        </a>
+        <div class="noidung">
+            <div class="clock">
+                <div class="hour">
+                    <div class="hr" id="hr"></div>
+                </div>
+                <div class="min">
+                    <div class="mn" id="mn"></div>
+                </div>
+                <div class="sec">
+                    <div class="sc" id="sc"></div>
+                </div>
+                <div class="circle-3">
+                    <i class="fas fa-history"></i>
+                </div>
+                <div class="ngaythang">
+                    <a href="home3.html">
+                        <div class="circle-1">
+                            <i class="fas fa-chevron-circle-left"></i>
+                        </div>
+                    </a>
+                    <div class="ngay">
+                        <p>01&nbsp;Thg&nbsp;7,&nbsp;2021</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thứ 5 </p>
+                    </div>
+                    <a href="home4.html">
+                        <div class="circle-2">
+                            <i class="fas fa-chevron-circle-right"></i>
+
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <script type="text/javascript">
+                const deg = 6;
+                const hr = document.querySelector('#hr');
+                const mn = document.querySelector('#mn');
+                const sc = document.querySelector('#sc');
+
+                setInterval(() => {
+                    let day = new Date();
+                    let hh = day.getHours() * 30;
+                    let mm = day.getMinutes() * deg;
+                    let ss = day.getSeconds() * deg;
+                    hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
+                    mn.style.transform = `rotateZ(${(mm)}deg)`;
+                    sc.style.transform = `rotateZ(${(ss)}deg)`;
+
+                })
+            </script>
+
+            <img class="img" src="../images/thống kê home.PNG" alt="hihi" height="250" width="370">
+        </div>
+
+        <div class="footer ">
+            <ul class="footer-list ">
+                <li class="footer-item ">
+                    <a href="home.html " class="footer-icon-link ">
+                        <i class="footer-icon fas fa-home "></i>
+                    </a>
+                </li>
+                <li class="footer-item ">
+                    <a href="podomoro.html " class="footer-icon-link ">
+                        <img class="footer-icon " src="../images/icon.png " alt="hihi " height="35 " width="35 ">
+                    </a>
+                </li>
+                <li class="footer-item ">
+                    <a href="thongke.html" class="footer-icon-link ">
+                        <i class="footer-icon fas fa-chart-pie "></i>
+
+                    </a>
+                </li>
+                <li class="footer-item ">
+                    <a href="canhan.html " class="footer-icon-link ">
+                        <i class="footer-icon fas fa-user "></i>
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

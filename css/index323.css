@@ -1,0 +1,78 @@
+:root {
+    --xd: #2BB6D5;
+    --xam: #B3A6A6;
+    --den: #211E1E;
+    --tim: #9b59b6;
+    --hd: #f99a9c;
+    --hn: #fdbccf;
+    --hic: #ff8b77;
+    --hbt: #ffaaaf;
+}
+
+.test {
+    color: #211E1E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: inherit;
+    font-family: "UTM Facebook K&T";
+    box-sizing: border-box;
+}
+
+.conten {
+    margin: auto;
+    height: 736px;
+    width: 414px;
+    background-color: #fee3ea;
+    border-radius: 20px;
+    border-style: groove;
+    position: relative;
+}
+
+img {
+    margin-top: 100px;
+    border-radius: 15px 15px 0 0;
+}
+
+h1 {
+    margin-top: 60px;
+    margin-left: 12px;
+    font-size: 40px;
+    color: var(--den)
+}
+
+.tren {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 30px;
+    font-size: 22px;
+    color: var(--den)
+}
+
+.anhhihi {
+    background-color: var(--hic);
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 130px;
+}
+
+button {
+    font-size: 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 70px;
+    padding: 10px 80px 8px 80px;
+    background-color: var(--hbt);
+    color: #ffffff;
+}
+
+.button :hover {
+    cursor: pointer;
+    color: #211E1E(255, 255, 255);
+}
